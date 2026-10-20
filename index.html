@@ -464,7 +464,7 @@ $("toastClose").onclick = () => hideToast(true);
 
 /* ---------------- YES ---------------- */
 function sayYes() {
-  if (answered) { openModal("thanks"); return; }
+   if (answered) { location.reload(); return; }
   answered = true;
   hideToast(false);
   no.remove(); if (spacer) spacer.remove();
